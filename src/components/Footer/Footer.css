@@ -1,0 +1,371 @@
+/* =========================================================
+   HOMESTORE FOOTER - DISEÑO EN ARMONÍA CON EL HEADER
+   ========================================================= */
+
+.homestore-footer {
+  width: 100%;
+  background-color: #0f172a;
+  color: #94a3b8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin-top: auto;
+}
+
+.homestore-footer__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* 1. BENEFICIOS Y CONFIANZA */
+.homestore-footer__benefits {
+  background-color: #1e293b;
+  border-top: 1px solid #334155;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.75rem 0;
+}
+
+.homestore-footer__benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.homestore-footer__benefit-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.homestore-footer__benefit-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(225, 29, 72, 0.2);
+}
+
+.homestore-footer__benefit-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.homestore-footer__benefit-text h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f8fafc;
+  line-height: 1.2;
+}
+
+.homestore-footer__benefit-text p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.775rem;
+  color: #94a3b8;
+  line-height: 1.3;
+}
+
+/* 2. CONTENIDO PRINCIPAL */
+.homestore-footer__main {
+  padding: 3.5rem 0 2.5rem 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.homestore-footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.25fr;
+  gap: 2.5rem;
+}
+
+.homestore-footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MARCA EN FOOTER */
+.homestore-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.homestore-footer__logo-badge {
+  width: 40px;
+  height: 40px;
+  background: #1e293b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.homestore-footer__logo-svg {
+  width: 28px;
+  height: 28px;
+}
+
+.homestore-footer__brand-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.homestore-footer__name {
+  font-size: 1.35rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.homestore-footer__name--white {
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.homestore-footer__name--accent {
+  font-weight: 900;
+  background: linear-gradient(135deg, #e11d48 0%, #f97316 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homestore-footer__badge {
+  background: rgba(225, 29, 72, 0.15);
+  color: #f43f5e;
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.4rem;
+  border-radius: 5px;
+  border: 1px solid rgba(225, 29, 72, 0.3);
+}
+
+.homestore-footer__description {
+  margin: 0 0 1.5rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #94a3b8;
+}
+
+/* REDES SOCIALES */
+.homestore-footer__social {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.homestore-footer__social-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.homestore-footer__social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.homestore-footer__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.homestore-footer__social-btn:hover {
+  background: #334155;
+  border-color: #e11d48;
+  transform: translateY(-2px);
+}
+
+/* COLUMNAS DE ENLACES */
+.homestore-footer__col-title {
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.homestore-footer__col-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 24px;
+  height: 2px;
+  background: linear-gradient(135deg, #e11d48 0%, #f59e0b 100%);
+  border-radius: 2px;
+}
+
+.homestore-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.homestore-footer__link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.homestore-footer__link:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+/* CONTACTO */
+.homestore-footer__contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.homestore-footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.835rem;
+  line-height: 1.4;
+}
+
+.homestore-footer__contact-icon {
+  font-size: 1.05rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.homestore-footer__contact-item strong {
+  display: block;
+  color: #cbd5e1;
+  font-size: 0.8rem;
+}
+
+.homestore-footer__contact-item span {
+  color: #94a3b8;
+}
+
+/* 3. BARRA INFERIOR / COPYRIGHT & PAGOS */
+.homestore-footer__bottom {
+  padding: 1.5rem 0;
+  background-color: #0b1120;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.homestore-footer__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.homestore-footer__copyright {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.homestore-footer__copyright strong {
+  color: #94a3b8;
+}
+
+.homestore-footer__payments {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.homestore-footer__payments-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.homestore-footer__payment-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.homestore-footer__pay-tag {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.homestore-footer__pay-tag--accent {
+  background: rgba(225, 29, 72, 0.15);
+  border-color: rgba(225, 29, 72, 0.3);
+  color: #fda4af;
+}
+
+/* =========================================================
+   RESPONSIVIDAD
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .homestore-footer__benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .homestore-footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .homestore-footer__benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .homestore-footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .homestore-footer__main {
+    padding: 2.5rem 0 1.5rem 0;
+  }
+
+  .homestore-footer__bottom-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
