@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -21,8 +22,13 @@ function App() {
       />
 
       <main className="main-content">
-        {/* Espacio para SearchBar, ProductList, ProductCard y Footer */}
+        {/* Espacio para SearchBar, ProductList, ProductCard */}
       </main>
+
+      <Footer
+        storeName="Homestore"
+        tagline="Todo para construir, renovar y decorar tu hogar con la mejor calidad y garantía."
+      />
     </div>
   )
 }
