@@ -3,7 +3,6 @@ import './ProductList.css'
 
 /**
  * Componente ProductList para renderizar una lista de productos.
- * Cumple con los requerimientos del PDF:
  * - Renderiza lista de productos usando map.
  * - Uso correcto de key única (product.id).
  * - Componente separado en carpeta /components/ProductList.

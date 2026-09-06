@@ -2,7 +2,6 @@ import './Button.css'
 
 /**
  * Componente Button reutilizable para Homestore.
- * Diseñado conforme a los requerimientos de la tarea de componentes custom en React.
  *
  * @param {Object} props
  * @param {React.ReactNode} props.children - Contenido o texto del botón

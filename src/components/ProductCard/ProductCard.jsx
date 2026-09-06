@@ -18,7 +18,6 @@ const formatPrice = (amount) => {
 
 /**
  * Componente ProductCard para Homestore.
- * Cumple con los requerimientos de la tarea de componentes en React:
  * - Recibe información del producto mediante props (product o id, name, price, category, image).
  * - Muestra nombre, precio, imagen y categoría del producto.
  * - Maneja estado local con useState (favorito y feedback al añadir al carrito).
