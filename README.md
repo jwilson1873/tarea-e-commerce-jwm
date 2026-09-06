@@ -66,7 +66,13 @@ Todos los componentes se encuentran modularizados en sus respectivas carpetas de
 
 ## 📸 Capturas de Pantalla
 
-### 1. Vista General del E-Commerce y Catálogo de Productos
+### 1. Header del E-Commerce y Catálogo de Productos
+![header del e-commerce](src/assets/capturas/captura-header.png)
 
 
-### 2. Tarjetas de Producto (`ProductCard`) y Estado Interactivo
+### 2. Tarjetas de Producto (`ProductCard`)
+![Tarjeta del Producto](src/assets/capturas/captura-productos.png)
+
+
+### 3. Footer del E-Commerce 
+![Footer del e-commerce](src/assets/capturas/captura-footer.png)
