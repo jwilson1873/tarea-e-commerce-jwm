@@ -1,0 +1,527 @@
+[
+  {
+    "id": 1,
+    "name": "Set de Floreros Decorativos Metálicos",
+    "price": 29990,
+    "category": "Decoración",
+    "image": "/src/assets/productos/descarga.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kit de Limpieza Multiuso con Balde y Escobilla",
+    "price": 14990,
+    "category": "Aseo y Limpieza",
+    "image": "/src/assets/productos/images (1).jpg"
+  },
+  {
+    "id": 3,
+    "name": "Set de Tazas y Bowls de Cerámica Multicolor",
+    "price": 24990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (2).jpg"
+  },
+  {
+    "id": 4,
+    "name": "Canasto Organizador Metálico Adhesivo para Cocina",
+    "price": 9990,
+    "category": "Organización",
+    "image": "/src/assets/productos/images (3).jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pack de Artículos de Limpieza para el Hogar",
+    "price": 16990,
+    "category": "Aseo y Limpieza",
+    "image": "/src/assets/productos/images (4).jpg"
+  },
+  {
+    "id": 6,
+    "name": "Set de Botellas Dosificadoras y Esponjas de Aseo",
+    "price": 8990,
+    "category": "Aseo y Limpieza",
+    "image": "/src/assets/productos/images (5).jpg"
+  },
+  {
+    "id": 7,
+    "name": "Aspiradora de Arrastre Multiuso 1400W Azul",
+    "price": 54990,
+    "category": "Electrohogar",
+    "image": "/src/assets/productos/images (6).jpg"
+  },
+  {
+    "id": 8,
+    "name": "Escalera Plegable Roja 4 Peldaños y Organizador",
+    "price": 39990,
+    "category": "Herramientas y Organización",
+    "image": "/src/assets/productos/images (7).jpg"
+  },
+  {
+    "id": 9,
+    "name": "Pala Recolectora de Basura con Guantes de Aseo",
+    "price": 4990,
+    "category": "Aseo y Limpieza",
+    "image": "/src/assets/productos/images (8).jpg"
+  },
+  {
+    "id": 10,
+    "name": "Sofá Nórdico de 3 Cuerpos en Madera y Lino",
+    "price": 349990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (9).jpg"
+  },
+  {
+    "id": 11,
+    "name": "Aparador Buffet Moderno Negro con Acabados en Madera",
+    "price": 219990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (10).jpg"
+  },
+  {
+    "id": 12,
+    "name": "Velador de Madera Natural con 3 Cajones",
+    "price": 49990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (11).jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mueble Buffet Nórdico con Puertas y Cajones",
+    "price": 179990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (12).jpg"
+  },
+  {
+    "id": 14,
+    "name": "Sillón Bergère Clásico Capitoné en Cuero y Madera",
+    "price": 269990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (13).jpg"
+  },
+  {
+    "id": 15,
+    "name": "Sillón Lounge Individual Tapizado Gris con Cojines",
+    "price": 139990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (14).jpg"
+  },
+  {
+    "id": 16,
+    "name": "Cómoda Nórdica Vintage 4 Cajones Gris Claro",
+    "price": 119990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (15).jpg"
+  },
+  {
+    "id": 17,
+    "name": "Juego de Dormitorio 2 Plazas en Madera Maciza",
+    "price": 649990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (16).jpg"
+  },
+  {
+    "id": 18,
+    "name": "Juego de Living de Terraza Ratán Sintético 4 Piezas",
+    "price": 429990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (17).jpg"
+  },
+  {
+    "id": 19,
+    "name": "Poltrona Orejera en Terciopelo Amarillo Mostaza",
+    "price": 159990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (18).jpg"
+  },
+  {
+    "id": 20,
+    "name": "Sillón Curvo Loveseat Tapizado en Tela Crema",
+    "price": 229990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (19).jpg"
+  },
+  {
+    "id": 21,
+    "name": "Aparador Credenza Roble Claro 3 Cajones y Puerta",
+    "price": 189990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (20).jpg"
+  },
+  {
+    "id": 22,
+    "name": "Sillón Capitoné Gris Perla con Mesa Auxiliar",
+    "price": 169990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (21).jpg"
+  },
+  {
+    "id": 23,
+    "name": "Juego de Comedor Madera Roble con 8 Sillas Celestes",
+    "price": 529990,
+    "category": "Comedor",
+    "image": "/src/assets/productos/images (22).jpg"
+  },
+  {
+    "id": 24,
+    "name": "Juego de Comedor Cuadrado Oscuro 4 Sillas Turquesa",
+    "price": 259990,
+    "category": "Comedor",
+    "image": "/src/assets/productos/images (23).jpg"
+  },
+  {
+    "id": 25,
+    "name": "Juego de Comedor Rústico 4 Sillas Cuero Café",
+    "price": 289990,
+    "category": "Comedor",
+    "image": "/src/assets/productos/images (24).jpg"
+  },
+  {
+    "id": 26,
+    "name": "Juego de Comedor con Vidrio Templado y 6 Sillas",
+    "price": 369990,
+    "category": "Comedor",
+    "image": "/src/assets/productos/images (25).jpg"
+  },
+  {
+    "id": 27,
+    "name": "Juego de Comedor Redondo Nórdico con Sillas de Ratán",
+    "price": 399990,
+    "category": "Comedor",
+    "image": "/src/assets/productos/images (26).jpg"
+  },
+  {
+    "id": 28,
+    "name": "Juego de Comedor Extensible Familiar 10 Sillas",
+    "price": 729990,
+    "category": "Comedor",
+    "image": "/src/assets/productos/images (27).jpg"
+  },
+  {
+    "id": 29,
+    "name": "Juego de Comedor Ovalado Elegante 6 Sillas Tapizadas",
+    "price": 459990,
+    "category": "Comedor",
+    "image": "/src/assets/productos/images (28).jpg"
+  },
+  {
+    "id": 30,
+    "name": "Set de Terraza Plegable Hexagonal con Sombrilla Azul",
+    "price": 189990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (29).jpg"
+  },
+  {
+    "id": 31,
+    "name": "Juego de Comedor Exterior Madera Teca con Quitasol",
+    "price": 279990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (30).jpg"
+  },
+  {
+    "id": 32,
+    "name": "Sillón Nido de Terraza Egg Ratán con Capota y Cojín",
+    "price": 229990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (31).jpg"
+  },
+  {
+    "id": 33,
+    "name": "Mesa de Picnic de Madera Exterior con Bancas",
+    "price": 129990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (32).jpg"
+  },
+  {
+    "id": 34,
+    "name": "Set Bistro Plegable de Balcón Mesa y 2 Sillas",
+    "price": 64990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (33).jpg"
+  },
+  {
+    "id": 35,
+    "name": "Juego de Terraza Redondo Madera Teca 4 Sillas",
+    "price": 179990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (34).jpg"
+  },
+  {
+    "id": 36,
+    "name": "Living Modular de Palets para Jardín con Cojines",
+    "price": 329990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (35).jpg"
+  },
+  {
+    "id": 37,
+    "name": "Living Modular de Aluminio Blanco para Exterior",
+    "price": 549990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images (36).jpg"
+  },
+  {
+    "id": 38,
+    "name": "Mueble Bar Cantina Clásico con Vitrina y Taburetes",
+    "price": 599990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (37).jpg"
+  },
+  {
+    "id": 39,
+    "name": "Librero Biblioteca Doble de Madera Maciza",
+    "price": 249990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (38).jpg"
+  },
+  {
+    "id": 40,
+    "name": "Librero Estrecho Clásico de Madera con Cajón",
+    "price": 129990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (39).jpg"
+  },
+  {
+    "id": 41,
+    "name": "Bar Globo Terráqueo Vintage con Ruedas",
+    "price": 119990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (40).jpg"
+  },
+  {
+    "id": 42,
+    "name": "Barra Desayunador de Cocina con 2 Sillas Negras",
+    "price": 149990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (41).jpg"
+  },
+  {
+    "id": 43,
+    "name": "Isla Organizadora de Cocina Madera y Metal",
+    "price": 164990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (42).jpg"
+  },
+  {
+    "id": 44,
+    "name": "Estantería Modular Abierta de Madera 4 Niveles",
+    "price": 94990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (43).jpg"
+  },
+  {
+    "id": 45,
+    "name": "Librero Organizador Multiespacio Madera Clara",
+    "price": 149990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (44).jpg"
+  },
+  {
+    "id": 46,
+    "name": "Biblioteca Organizadora 8 Compartimentos Wengué",
+    "price": 124990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (45).jpg"
+  },
+  {
+    "id": 47,
+    "name": "Estante Librero Minimalista 4 Niveles con 2 Cajones",
+    "price": 109990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (46).jpg"
+  },
+  {
+    "id": 48,
+    "name": "Biblioteca Mural Clásica con Escalera Deslizante",
+    "price": 849990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (47).jpg"
+  },
+  {
+    "id": 49,
+    "name": "Mueble Cava Bar Vertical con Copero y Gabinete",
+    "price": 174990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (48).jpg"
+  },
+  {
+    "id": 50,
+    "name": "Librero Vertical Diseño Árbol con Cajón Base",
+    "price": 59990,
+    "category": "Muebles",
+    "image": "/src/assets/productos/images (49).jpg"
+  },
+  {
+    "id": 51,
+    "name": "Lámpara de Mesa Bronce Clásica Pantalla Plisada",
+    "price": 38990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (50).jpg"
+  },
+  {
+    "id": 52,
+    "name": "Lámpara de Mesa Cúpula Latón y Base Travertino",
+    "price": 59990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (51).jpg"
+  },
+  {
+    "id": 53,
+    "name": "Lámpara de Sobremesa Esfera Cerámica Dorada",
+    "price": 42990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (52).jpg"
+  },
+  {
+    "id": 54,
+    "name": "Set Lámparas de Mesa Madera Torneada y Pantalla Lino",
+    "price": 49990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (53).jpg"
+  },
+  {
+    "id": 55,
+    "name": "Lámpara de Pie Trípode de Acero Pantalla Cilíndrica",
+    "price": 74990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (54).jpg"
+  },
+  {
+    "id": 56,
+    "name": "Lámpara de Mesa Cerámica Blanca Pantalla Plisada",
+    "price": 34990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (55).jpg"
+  },
+  {
+    "id": 57,
+    "name": "Set de 2 Lámparas de Mesa Escultóricas Negras",
+    "price": 64990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (56).jpg"
+  },
+  {
+    "id": 58,
+    "name": "Lámpara de Velador Diseño Piedras Cerámicas y Cromo",
+    "price": 28990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (57).jpg"
+  },
+  {
+    "id": 59,
+    "name": "Lámpara de Mesa Cristal Iluminado y Acentos Oro",
+    "price": 52990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (58).jpg"
+  },
+  {
+    "id": 60,
+    "name": "Lámpara de Mesa Vidrio y Metal Pantalla Gris",
+    "price": 41990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (59).jpg"
+  },
+  {
+    "id": 61,
+    "name": "Lámpara de Noche Minimalista Latón Satinado",
+    "price": 29990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (60).jpg"
+  },
+  {
+    "id": 62,
+    "name": "Lámpara de Mesa Clásica Imperial Bronce Labrado",
+    "price": 62990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (61).jpg"
+  },
+  {
+    "id": 63,
+    "name": "Lámpara de Mesa Bloques Geométricos Mármol Blanco",
+    "price": 46990,
+    "category": "Iluminación",
+    "image": "/src/assets/productos/images (62).jpg"
+  },
+  {
+    "id": 64,
+    "name": "Set de Copas de Cristal Tallado Clásicas 3 Piezas",
+    "price": 21990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (63).jpg"
+  },
+  {
+    "id": 65,
+    "name": "Set de 4 Vasos de Cristal Tallado Whisky Vintage",
+    "price": 16990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (64).jpg"
+  },
+  {
+    "id": 66,
+    "name": "Set de 2 Copas de Champaña Flauta Cristal Rosé",
+    "price": 14990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (65).jpg"
+  },
+  {
+    "id": 67,
+    "name": "Juego de Cristalería Fina Corte Diamante 6 Piezas",
+    "price": 37990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (66).jpg"
+  },
+  {
+    "id": 68,
+    "name": "Set de 2 Copas Flauta Cristal Espumante Dorado",
+    "price": 13990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (67).jpg"
+  },
+  {
+    "id": 69,
+    "name": "Juego de 3 Copas Cristal Bohemia Rubí y Oro 24K",
+    "price": 32990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (68).jpg"
+  },
+  {
+    "id": 70,
+    "name": "Set de Copas Nupciales Cisnes Oro y Plata",
+    "price": 26990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (69).jpg"
+  },
+  {
+    "id": 71,
+    "name": "Set de 6 Copas de Vino Tinto Cristal de Cata",
+    "price": 24990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (70).jpg"
+  },
+  {
+    "id": 72,
+    "name": "Set de 6 Copas de Vidrio Tallado Tono Ámbar",
+    "price": 22990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (71).jpg"
+  },
+  {
+    "id": 73,
+    "name": "Set de 6 Vasos de Vidrio Acanalado Multicolores",
+    "price": 18990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images (72).jpg"
+  },
+  {
+    "id": 74,
+    "name": "Batería de Cocina Acero Inoxidable 5 Piezas",
+    "price": 79990,
+    "category": "Cocina y Menaje",
+    "image": "/src/assets/productos/images.jpg"
+  },
+  {
+    "id": 75,
+    "name": "Banco de Plaza y Jardín en Fierro Fundido y Madera",
+    "price": 89990,
+    "category": "Terraza y Jardín",
+    "image": "/src/assets/productos/images.png"
+  }
+]

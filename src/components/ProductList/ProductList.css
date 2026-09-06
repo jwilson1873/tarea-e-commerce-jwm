@@ -1,0 +1,45 @@
+/* =========================================================
+   PRODUCT LIST GRID - HOMESTORE
+   ========================================================= */
+
+.product-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .product-list-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+}
+
+.product-list__empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px dashed #cbd5e1;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.product-list__empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.product-list__empty-title {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.product-list__empty-text {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0;
+}
