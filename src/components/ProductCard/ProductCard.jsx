@@ -2,6 +2,12 @@ import { useState } from 'react'
 import Button from '../Button'
 import './ProductCard.css'
 
+const productImageUrls = import.meta.glob('/src/assets/productos/*', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+})
+ 
 /**
  * Utilidad para formatear montos como moneda chilena (CLP).
  * @param {number} amount
@@ -47,6 +53,8 @@ function ProductCard({
   const [isAdded, setIsAdded] = useState(false)
 
   const productData = product || { id, name, price, category, image }
+
+  const imageUrl = productImageUrls[image] || image
 
   const handleToggleFavorite = (e) => {
     e.stopPropagation()
@@ -105,7 +113,7 @@ function ProductCard({
         {/* Contenedor de la Imagen con zoom al hover */}
         <div className="product-card__img-wrap">
           <img
-            src={image}
+            src={imageUrl}
             alt={name}
             className="product-card__image"
             loading="lazy"
