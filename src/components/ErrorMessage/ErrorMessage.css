@@ -1,0 +1,63 @@
+.error-message-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff1f2;
+  border: 1.5px solid #fecdd3;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  margin: 2.5rem auto;
+  max-width: 580px;
+  box-shadow: 0 10px 25px -5px rgba(225, 29, 72, 0.08);
+  animation: error-fade-in 0.3s ease-out;
+}
+
+.error-message-card__icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #ffe4e6;
+  color: #e11d48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.error-message-card__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.error-message-card__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #9f1239;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.error-message-card__desc {
+  font-size: 0.95rem;
+  color: #881337;
+  line-height: 1.55;
+  margin: 0 0 1.5rem 0;
+  max-width: 440px;
+}
+
+.error-message-card__actions {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes error-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
