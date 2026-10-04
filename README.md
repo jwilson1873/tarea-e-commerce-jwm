@@ -98,12 +98,8 @@ La aplicación se comunica con el servicio público de DummyJSON según los line
 ## 📸 Capturas de Pantalla del Resultado
 
 ### 1. Vista General del E-Commerce (Catálogo conectado a DummyJSON)
-![Vista General](src/assets/capturas/captura-header.png)
+![Vista General](src/assets/capturas/Captura_vista_general.png)
 
-### 2. Tarjetas de Producto (`ProductCard`) con Datos Dinámicos
-![Tarjetas de Productos](src/assets/capturas/captura-productos.png)
+### 2. Ejemplo de búsqueda de productos  
+![Búsqueda de Productos](src/assets/capturas/Captura_busqueda.png)
 
-### 3. Footer Informativo de la Tienda
-![Footer](src/assets/capturas/captura-footer.png)
-
-> **Nota**: Para verificar el funcionamiento en vivo del estado de carga (`Loader`), error (`ErrorMessage`) o la búsqueda por nombre, puedes ejecutar `npm run dev` y filtrar en el input superior o inspeccionar los componentes correspondientes.
