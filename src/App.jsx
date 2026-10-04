@@ -141,6 +141,7 @@ function App() {
           value={searchTerm}
           onChange={setSearchTerm}
           onClear={() => setSearchTerm('')}
+          placeholder="Buscar productos por nombre..."
         />
       </Header>
 

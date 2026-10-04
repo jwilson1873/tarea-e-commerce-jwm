@@ -42,10 +42,13 @@ const formatPrice = (amount) => {
 function ProductCard({
   product,
   id = product?.id,
-  name = product?.title || product?.name || 'Producto Homestore',
+  title,
+  name,
   price = product?.price || 0,
   category = product?.category || 'General',
-  image = product?.thumbnail || (Array.isArray(product?.images) && product.images[0]) || product?.image || '',
+  image,
+  thumbnail,
+  rating: propRating,
   onAddToCart,
 }) {
   // Estado con useState para alternar producto como favorito
@@ -53,12 +56,29 @@ function ProductCard({
   // Estado con useState para dar feedback visual de confirmación al agregar
   const [isAdded, setIsAdded] = useState(false)
 
-  const productData = product || { id, name, price, category, image }
+  const resolvedName = title || name || product?.title || product?.name || 'Producto Homestore'
+  const resolvedImage =
+    thumbnail ||
+    image ||
+    product?.thumbnail ||
+    (Array.isArray(product?.images) && product.images[0]) ||
+    product?.image ||
+    ''
+
+  const productData = product || {
+    id,
+    name: resolvedName,
+    title: resolvedName,
+    price,
+    category,
+    image: resolvedImage,
+    thumbnail: resolvedImage,
+  }
 
   const imageUrl =
-    typeof image === 'string' && productImageUrls[image]
-      ? productImageUrls[image]
-      : image
+    typeof resolvedImage === 'string' && productImageUrls[resolvedImage]
+      ? productImageUrls[resolvedImage]
+      : resolvedImage
 
   const formattedCategory =
     typeof category === 'string' && category.trim().length > 0
@@ -66,7 +86,8 @@ function ProductCard({
       : 'General'
 
   const productSku = product?.sku || `HS-${String(id).padStart(4, '0')}`
-  const rating = product?.rating ? Number(product.rating).toFixed(1) : null
+  const rawRating = propRating !== undefined ? propRating : product?.rating
+  const rating = rawRating ? Number(rawRating).toFixed(1) : null
   const shippingText =
     product?.shippingInformation ||
     (price >= 50 ? 'Envío gratis' : null)

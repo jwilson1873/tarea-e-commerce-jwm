@@ -33,6 +33,18 @@ function ProductList({
         <ProductCard
           key={product.id}
           product={product}
+          id={product.id}
+          name={product.title || product.name}
+          title={product.title}
+          price={product.price}
+          category={product.category}
+          image={
+            product.thumbnail ||
+            (Array.isArray(product.images) && product.images[0]) ||
+            product.image
+          }
+          thumbnail={product.thumbnail}
+          rating={product.rating}
           onAddToCart={onAddToCart}
         />
       ))}
