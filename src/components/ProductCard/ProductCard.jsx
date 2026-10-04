@@ -9,42 +9,43 @@ const productImageUrls = import.meta.glob('/src/assets/productos/*', {
 })
  
 /**
- * Utilidad para formatear montos como moneda chilena (CLP).
+ * Utilidad para formatear montos.
+ * Soporta montos numéricos de la API DummyJSON (USD) y montos enteros locales.
  * @param {number} amount
  * @returns {string}
  */
 const formatPrice = (amount) => {
-  if (typeof amount !== 'number' || isNaN(amount)) return '$0'
-  return new Intl.NumberFormat('es-CL', {
+  if (typeof amount !== 'number' || isNaN(amount)) return '$0.00'
+  return new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'CLP',
-    maximumFractionDigits: 0,
+    currency: 'USD',
   }).format(amount)
 }
 
 /**
  * Componente ProductCard para Homestore.
- * - Recibe información del producto mediante props (product o id, name, price, category, image).
- * - Muestra nombre, precio, imagen y categoría del producto.
+ * - Recibe información del producto mediante props (product o id, name/title, price, category, image/thumbnail).
+ * - Compatible con la API de DummyJSON y catálogos estáticos.
+ * - Muestra nombre, precio, imagen, categoría y rating del producto.
  * - Maneja estado local con useState (favorito y feedback al añadir al carrito).
  * - Integración con botón reutilizable (Button).
  *
  * @param {Object} props
- * @param {Object} [props.product] - Objeto completo de producto según schema products.json
+ * @param {Object} [props.product] - Objeto completo de producto según API o schema local
  * @param {number|string} [props.id] - Identificador único del producto
- * @param {string} [props.name] - Nombre comercial del producto
- * @param {number} [props.price] - Precio en pesos chilenos
+ * @param {string} [props.name] - Nombre o título comercial del producto
+ * @param {number} [props.price] - Precio del producto
  * @param {string} [props.category] - Categoría a la que pertenece
- * @param {string} [props.image] - Ruta del recurso de imagen
+ * @param {string} [props.image] - URL o ruta del recurso de imagen
  * @param {Function} [props.onAddToCart] - Callback disparado al hacer clic en 'Agregar al carrito'
  */
 function ProductCard({
   product,
   id = product?.id,
-  name = product?.name || 'Producto Homestore',
+  name = product?.title || product?.name || 'Producto Homestore',
   price = product?.price || 0,
   category = product?.category || 'General',
-  image = product?.image || '',
+  image = product?.thumbnail || (Array.isArray(product?.images) && product.images[0]) || product?.image || '',
   onAddToCart,
 }) {
   // Estado con useState para alternar producto como favorito
@@ -54,7 +55,21 @@ function ProductCard({
 
   const productData = product || { id, name, price, category, image }
 
-  const imageUrl = productImageUrls[image] || image
+  const imageUrl =
+    typeof image === 'string' && productImageUrls[image]
+      ? productImageUrls[image]
+      : image
+
+  const formattedCategory =
+    typeof category === 'string' && category.trim().length > 0
+      ? category.charAt(0).toUpperCase() + category.slice(1)
+      : 'General'
+
+  const productSku = product?.sku || `HS-${String(id).padStart(4, '0')}`
+  const rating = product?.rating ? Number(product.rating).toFixed(1) : null
+  const shippingText =
+    product?.shippingInformation ||
+    (price >= 50 ? 'Envío gratis' : null)
 
   const handleToggleFavorite = (e) => {
     e.stopPropagation()
@@ -75,16 +90,13 @@ function ProductCard({
     }, 1200)
   }
 
-  // Si el precio califica para envío gratis (> $29.990 según banner de tienda)
-  const hasFreeShipping = price >= 29990
-
   return (
     <article className="product-card" aria-label={name}>
       {/* Zona superior: Imagen, Badge de Categoría y Botón Favorito */}
       <div className="product-card__media">
-        {category && (
-          <span className="product-card__category-badge" title={`Categoría: ${category}`}>
-            {category}
+        {formattedCategory && (
+          <span className="product-card__category-badge" title={`Categoría: ${formattedCategory}`}>
+            {formattedCategory}
           </span>
         )}
 
@@ -128,10 +140,15 @@ function ProductCard({
       {/* Zona central: Información del Producto */}
       <div className="product-card__body">
         <div className="product-card__meta">
-          <span className="product-card__sku">CÓD: HS-{String(id).padStart(4, '0')}</span>
-          {hasFreeShipping && (
-            <span className="product-card__shipping-badge" title="Despacho gratis a todo Chile">
-              🚚 Envío gratis
+          <span className="product-card__sku">CÓD: {productSku}</span>
+          {rating && (
+            <span className="product-card__rating-badge" title={`Calificación: ${rating} de 5 estrellas`}>
+              ⭐ {rating}
+            </span>
+          )}
+          {shippingText && (
+            <span className="product-card__shipping-badge" title={shippingText}>
+              🚚 {shippingText.replace(/^🚚\s*/, '')}
             </span>
           )}
         </div>
